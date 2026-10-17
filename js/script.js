@@ -1,12 +1,25 @@
+// Dark mode with localStorage
 const themeButton = document.getElementById("theme-toggle");
+
+// Load the saved theme when the page opens
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    themeButton.textContent = "☀️";
+} else {
+    themeButton.textContent = "🌙";
+}
 
 themeButton.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 
     if (document.body.classList.contains("dark-mode")) {
         themeButton.textContent = "☀️";
+        localStorage.setItem("theme", "dark");
     } else {
         themeButton.textContent = "🌙";
+        localStorage.setItem("theme", "light");
     }
 });
 
