@@ -205,3 +205,36 @@ body.dark-mode section h2 {
         padding: 20px;
     }
 }
+
+/* Project filtering buttons */
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: #217c26;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #17611b;
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background-color: #145218;
+}
+
+/* Hide projects that do not match the filter */
+.project-card.hidden {
+    display: none;
+}
