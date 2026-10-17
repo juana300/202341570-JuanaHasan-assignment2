@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juana Hasan | Portfolio</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Juana Hasan</h1>
+            <p>Software Engineering Student | Data Science & Analytics</p>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                <p>
+                    Hi, I'm Juana Hasan, a Software Engineering student at KFUPM with a
+                    concentration in Data Science and Analytics. I'm interested in software
+                    development and working with data to understand problems and build useful
+                    solutions. I enjoy learning new technologies, improving my programming
+                    skills, and exploring different areas of software engineering.
+                </p>
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="projects-container">
+
+                <article class="project-card">
+                   <img src="assets/images/project1.png" alt="Screenshot of Project 1">
+ 
+                    <h3>KFUPM Map</h3>
+                    <p>
+                        A web application that allows KFUPM students to enter their course CRNs and visualize their schedule on the campus map. It shows class locations, the route between buildings, and the total travel distance for the selected day.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <img src="assets/images/project2.png" alt="Screenshot of Project 2">
+
+                    <h3>File System Visualization</h3>
+                    <p>
+                        A web application that visualizes folders and files in an organized and interactive way. It provides tree and chart views to display directory structure and file sizes, helping users understand how their storage is distributed.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+        
+    </main>
+
+
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
