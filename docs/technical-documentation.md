@@ -2,9 +2,9 @@
 
 ## 1. Project Overview
 
-This project is a responsive personal portfolio website developed using HTML, CSS, and JavaScript.
+This project is an interactive and responsive personal portfolio website developed using HTML, CSS, and JavaScript.
 
-The website contains three main sections: About Me, Projects, and Contact. It also includes responsive design for different screen sizes and a light/dark theme toggle.
+It builds on Assignment 1 by adding project filtering, saved light/dark mode preferences, contact form validation, and animations to improve the user experience.
 
 ## 2. HTML Structure
 
@@ -14,18 +14,22 @@ The page includes:
 
 - **Header and Navigation:** Contains my name and navigation links to the About, Projects, and Contact sections.
 - **About Me:** Contains a short introduction about me.
-- **Projects:** Displays two projects with screenshots and descriptions.
-- **Contact:** Contains a form with Name, Email, and Message fields.
+- **Projects:** Displays two projects with screenshots and descriptions, along with buttons to filter projects by category.
+- **Contact:** Contains a form with Name, Email, and Message fields as well as validation and feedback messages.
 
 HTML elements such as `header`, `nav`, `main`, `section`, and `article` are used to organize the content.
+
+Additional HTML attributes such as data-filter and data-category are used to identify project categories for filtering.
 
 ## 3. CSS Styling
 
 The website styling is contained in `css/styles.css`.
 
-CSS is used to control the colors, spacing, typography, navigation bar, project cards, contact form, and light/dark themes.
+CSS Flexbox is used to arrange elements such as the navigation bar and project cards.
 
-Flexbox is used to arrange elements such as the navigation bar and project cards.
+Additional CSS styles were added for the active filtering button, form validation messages, and animations.
+
+CSS transitions are used to create smooth hover effects on buttons and project cards. Smooth scrolling was also added to improve navigation between sections.
 
 ## 4. Responsive Design
 
@@ -39,6 +43,7 @@ On smaller screens:
 - The project cards change from a horizontal layout to a vertical layout.
 - Padding and spacing are reduced to fit smaller screens.
 - The contact form adjusts to the available screen width.
+- The project filtering buttons can wrap to fit smaller screens.
 
 The responsive layout was tested using Chrome Developer Tools.
 
@@ -46,26 +51,52 @@ The responsive layout was tested using Chrome Developer Tools.
 
 The JavaScript code is contained in `js/script.js`.
 
-JavaScript is used to implement the light/dark mode feature. When the user clicks the theme toggle button, JavaScript adds or removes the `dark-mode` class from the page.
+JavaScript is used to implement project filtering, persistent light/dark mode, and contact form validation.
 
-The button icon also changes between a moon and sun depending on the selected theme.
+### Project Filtering
 
-## 6. Project Images
+Users can select All Projects, Web Apps, or Visualization. JavaScript uses the data-filter and data-category attributes to show or hide project cards based on the selected category.
 
-Screenshots of my projects are stored in the `assets/images/` folder.
+### Dark and Light Mode
 
-The images are displayed in the Projects section using HTML `<img>` elements. CSS is used to control the size and appearance of the images so that they fit properly inside the project cards.
+The theme toggle adds or removes the dark-mode class and updates the moon/sun icon. The selected theme is saved using localStorage and restored when the page loads.
 
+### Contact Form Validation
+
+JavaScript checks that the Name, Email, and Message fields are not empty and that the email follows a valid format.
+
+Invalid inputs display error messages, while valid inputs display a confirmation message and clear the form. The form uses preventDefault() to avoid refreshing the page.
+
+The contact form is a demonstration feature and does not send messages to a server.
+
+
+## 6. Error Handling and User Feedback
+
+The website provides feedback to users when interacting with the contact form.
+
+If required fields are empty, error messages are displayed to explain what information is missing.
+
+If the email address has an invalid format, the user is asked to enter a valid email address.
+
+When all fields are valid, a confirmation message appears.
+
+Error and confirmation messages use different colors to help users understand the result.
 ## 7. Testing
 
 The website was tested throughout development to make sure the required features worked correctly.
 
-The following tests were performed:
+The following tests were tested:
 
-- Tested the navigation links between sections.
-- Tested the light/dark mode toggle.
-- Checked that the project images displayed correctly.
-- Checked the contact form layout.
-- Tested the website at different screen sizes.
-- Used Chrome Developer Tools to test the mobile layout at approximately 400px width.
-- Checked that the project cards changed to a vertical layout on smaller screens.
+- Navigation links between sections and project filtering.
+- Light/dark mode and saved theme preferences after refreshing.
+- Contact form validation with empty, invalid, and valid inputs.
+- Project images, animations, and hover effects.
+- Responsive layout on desktop and mobile, including the iPhone 16 Pro Max device view.
+- Vertical stacking of project cards and scrolling on smaller screens.
+
+## 8. Technologies Used
+- HTML
+- CSS3, Flexbox, Media Queries, and Animations
+- JavaScript and Browser localStorage
+- Chrome Developer Tools
+- Git and GitHub
