@@ -7,50 +7,50 @@
 I used ChatGPT for the following tasks:
 
 - Breaking assignment requirements into smaller steps.
-- Getting guidance while creating the About Me, Projects, and Contact sections.
-- Learning how to use CSS Flexbox and media queries for responsive design.
-- Testing and debugging the mobile layout.
-- Implementing and debugging the light/dark mode feature using JavaScript.
+- Getting suggestions for interactive features that could be added to my existing portfolio.
+- Learning how to do project filtering using JavaScript.
+- Adding CSS animations and transitions to improve the user experience.
 - Improving the documentation for the project.
 
 ## 2. Benefits of Using AI
 
-Using ChatGPT helped me understand the assignment more clearly. At first, I was not sure what the assignment required, so I used ChatGPT to break the requirements into smaller tasks.
+Using ChatGPT helped me understand the new assignment requirements and how to extend my portfolio from Assignment 1 without starting over.
 
-It also helped me understand the purpose of different parts of the project instead of only providing code. 
+It also helped me understand how JavaScript can be used to make the website more interactive. For example, I learned how to use JavaScript to filter projects based on the button selected by the user and how to use localStorage to remember the selected theme.
 
-AI was also useful when debugging problems. When the responsive layout did not initially appear as expected on a mobile screen, I used ChatGPT to help identify and test the issue using Chrome Developer Tools.
+AI was also useful when debugging problems. When the contact form validation did not work as expected, I used ChatGPT to help identify the issue and understand how to fix it.
 
 ## 3. Challenges and Limitations
 
-One challenge of using AI was that the first suggestion was not always exactly what I wanted. 
+One challenge of using AI was that the suggested code did not always work correctly when added to my existing project.
 
-For example, after implementing the dark mode, the first design did not make the entire background dark. Some areas remained light, so I reviewed the result and modified the CSS until the dark mode matched the design I wanted.
+For example, when I first implemented the contact form validation, the browser displayed its default validation message instead of the custom error messages. After adding the novalidate attribute, the custom messages still did not appear.
+
+I reviewed the HTML and JavaScript code and found that the form-feedback element was missing from the HTML. I added the missing element and tested the form again until the error and confirmation messages appeared correctly. This showed me that AI suggestions still need to be checked and tested because they may require adjustments to work with the existing code.
 
 ## 4. Learning Outcomes
 
 Through this assignment and the use of AI assistance, I improved my understanding of:
 
-- Semantic HTML elements.
-- CSS Flexbox.
-- Responsive design using media queries.
-- Testing websites at different screen sizes.
-- Using JavaScript event listeners and CSS classes to create a theme toggle.
+- Using JavaScript event listeners to respond to user interactions.
+- Filtering project cards using data-filter and data-category attributes.
+- Using localStorage to save and retrieve user preferences.
+- Validating form inputs using JavaScript.
+- Displaying error and confirmation messages based on user input.
+- Using CSS transitions and animations to improve the user experience.
 - Testing and modifying AI-generated suggestions instead of accepting them automatically.
 
 ## 5. Responsible Use and Modifications
 
 I used AI as a learning and development assistant rather than submitting its output without reviewing it.
 
-I tested any suggested code by AI in my own project and checked the results in the browser. When something did not work or did not match what I wanted, I reviewed and modified it.
+I reviewed the suggested features that can be possibly added to my portifolio website and make the final decision of what suits it the most.
 
-For example, I tested the responsive design using Chrome Developer Tools and verified that the project cards changed from a horizontal layout to a vertical layout on smaller screens.
+I tested the project filtering buttons and verified that the dark/light mode preference was saved after refreshing the page.
 
-I also modified the suggested dark mode because the initial version did not make the entire page background dark. I changed the CSS and tested the feature again until the result matched the design I wanted.
+When the contact form validation did not work correctly, I reviewed the HTML and JavaScript, added the missing element, and tested the form again until the messages appeared correctly.
 
-I also modified the suggested image styling by AI after noticing that the project screenshots were being cropped and differs on different screen sizes.
-
-I used my own project screenshots and personal portfolio content.
+I also tested the responsive layout using Chrome Developer Tools to make sure the new features worked on smaller screens.
 
 Through this process, I made sure that I understood the main HTML, CSS, and JavaScript used in the project and that the final website reflected my own decisions and requirements.
 
