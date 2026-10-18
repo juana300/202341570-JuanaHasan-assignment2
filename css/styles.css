@@ -286,3 +286,45 @@ body.dark-mode #form-feedback.success {
         transform: translateY(0);
     }
 }
+
+/* Smooth navigation scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Smooth project card hover effect */
+.project-card {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth button hover effect */
+button {
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .project-card,
+    button {
+        transition: none;
+    }
+
+    #form-feedback:not(:empty) {
+        animation: none;
+    }
+}
