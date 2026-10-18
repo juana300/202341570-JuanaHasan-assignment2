@@ -238,3 +238,51 @@ body.dark-mode section h2 {
 .project-card.hidden {
     display: none;
 }
+
+/* Contact form validation messages */
+.error-message {
+    display: block;
+    color: #b42318;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+#form-feedback {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#form-feedback.success {
+    color: #217c26;
+}
+
+#form-feedback.error {
+    color: #b42318;
+}
+
+/* Dark mode feedback colors */
+body.dark-mode .error-message,
+body.dark-mode #form-feedback.error {
+    color: #ff9999;
+}
+
+body.dark-mode #form-feedback.success {
+    color: #86efac;
+}
+
+/* Smooth feedback animation */
+#form-feedback:not(:empty) {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
