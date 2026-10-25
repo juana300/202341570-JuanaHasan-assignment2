@@ -1,4 +1,4 @@
-# Personal Portfolio Website - Assignment 1
+# Personal Portfolio Website - Assignment 2
 
 ## Project Description
 
